@@ -1,0 +1,110 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background for readability */
+}
+
+nav {
+    background-color: #333;
+    padding: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /* Evenly distribute buttons */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    flex: 1; /* Allow items to grow and take equal space */
+    text-align: center; /* Center text within the li */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    display: block; /* Make the entire area clickable */
+}
+
+nav a:hover {
+    background-color: #555; /* Darker background on hover */
+    color: #ffdd57; /* Change text color on hover */
+}
+
+header {
+    text-align: left;
+    padding: 100px;
+    background-image: url("/fork/images/download\ \(1\).jpg"); /* Primary color for header */
+    color: rgb(0, 0, 0); /* Text color for header */
+    padding-left: 5%;
+    background-size: cover;
+    padding-right: 20%;
+    margin-bottom: 30px; /* Space below header */
+}
+
+main {
+    padding: none;
+}
+
+.qualifications, .experience, .community, .background {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff; /* White background for sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.community p {
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+}
+h2 {
+    color: #333; /* Dark color for headings */
+    margin-bottom: 15px; /* Space below headings */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee; /* Divider for list items */
+}
+
+li:last-child {
+    border-bottom: none; /* Remove border from last item */
+}
+
+.contact {
+    text-align: center; /* Center align the contact section */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333; /* Dark background for footer */
+    color: white;
+    position: relative; /* Positioning context for footer */
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /* Evenly distribute buttons */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    flex: 1; /* Allow items to grow and take equal space */
+    text-align: center; /* Center text within the li */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    display: block; /* Make the entire area clickable */
+}
+
+nav a:hover {
+    background-color: #555; /* Darker background on hover */
+    color: #ffdd57; /* Change text color on hover */
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    color: #e7f3fe;
+    padding-top: 20%;
+    background-image: url("images/interest.JPG");
+    background-size: cover;
+    padding-left: 50%;
+}
+
+main {
+    padding: 20px;
+}
+
+.interests {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #e7f3fe; /* Light blue background */
+    border: 1px solid #b3d7ff; /* Slightly darker blue border */
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
